@@ -1,0 +1,34 @@
+//write a program to print difference b\wmaximum and minimum number from the array//
+#include <stdio.h>
+  int main()
+   {
+    int a1, a2, a3, a4,a5;
+    int max, min;
+    printf("numbers: \n");
+    scanf("%d" ,&a1);
+     scanf("%d ",&a2);
+      scanf("%d ",&a3);
+       scanf("%d ",&a4);
+        scanf("%d ",&a5);
+    if (a1 >= a2 && a1 >= a3 && a1 >= a4 && a1>=a5)
+      max = a1;
+    else if (a2 >= a1 && a2 >= a3 && a2 >= a4 && a2>a5)
+      max = a2;
+    else if (a3 >= a1 && a3 >= a2 && a3 >= a4 && a3>=a5)
+      max = a3;
+    else if(a4>=a1 && a4>=a2 && a4>=a3 && a4>=a5)
+      max = a4;
+      else
+      max = a5;
+    if (a1 <= a2 && a1 <= a3 && a1 <= a4 && a1<=a5)
+      min = a1;
+    else if (a2 <= a1 && a2 <= a3 && a2 <= a4 && a2<=a5)
+      min = a2;
+    else if (a3 <= a1 && a3 <= a2 && a3 <= a4 && a3<=a5)
+      min = a3;
+    else if(a4<=a1 && a4<=a2 && a4<=a3 && a4<=a5)
+      min = a4;
+      else 
+      min = a5;
+    printf("Difference is %d \n", max - min);
+}
